@@ -104,8 +104,10 @@
         th, td { padding: 12px; }
         /* Căn giữa cho tiêu đề bảng và các cột STT, MSSV */
         th, td:nth-child(1), td:nth-child(3) { text-align: center; }
-        /* Cột Họ và tên, Phân công nhiệm vụ căn trái cho dễ đọc */
-        td:nth-child(2), td:nth-child(4) { text-align: left; }
+        /* Cột Họ và tên: Căn trái và giữ trên 1 hàng không bị rớt dòng */
+        td:nth-child(2) { text-align: left; white-space: nowrap; }
+        /* Cột Phân công nhiệm vụ căn trái */
+        td:nth-child(4) { text-align: left; }
         th { background-color: #edf2f7; color: var(--primary-color); }
         footer {
             text-align: center;
@@ -135,129 +137,4 @@
         <!-- MỤC 1: Ý TƯỞNG KHỞI NGHIỆP -->
         <section id="y-tuong">
             <h2>1. Ý tưởng khởi nghiệp</h2>
-            <p><strong>Vấn đề thực tiễn:</strong> Hệ thống văn bản quy phạm pháp luật tại Việt Nam vô cùng đồ sộ, phức tạp và thường xuyên được cập nhật, bổ sung. Đối với các nhà sáng lập khởi nghiệp (startup), tiểu thương hay người dân bình thường, việc tra cứu một điều luật, hiểu đúng các điều khoản hợp đồng hay thực hiện thủ tục hành chính gặp rất nhiều khó khăn. Ngôn ngữ pháp lý khô khan cùng sự thiếu hụt kiến thức chuyên môn khiến họ dễ gặp rủi ro pháp lý hoặc tốn kém chi phí thuê tư vấn đắt đỏ.</p>
-
-            <p><strong>Giải pháp của LegalAI:</strong> LegalAI ra đời như một "Trợ lý Pháp lý Thông minh 24/7", ứng dụng công nghệ xử lý ngôn ngữ tự nhiên (NLP) và Trí tuệ nhân tạo (AI) để bình dân hóa việc tiếp cận pháp luật. Người dùng chỉ cần đặt câu hỏi bằng ngôn ngữ tự nhiên hàng ngày (ví dụ: <em>"Thành lập công ty TNHH 1 thành viên cần những thủ tục gì?"</em>), hệ thống sẽ ngay lập tức trích xuất, tổng hợp và tóm tắt các điều khoản liên quan một cách ngắn gọn, dễ hiểu. Để đảm bảo độ chính xác tuyệt đối, mọi câu trả lời của LegalAI đều kèm theo liên kết dẫn đến văn bản quy phạm pháp luật gốc của Nhà nước để người dùng đối chiếu.</p>
-
-            <p><strong>Khách hàng mục tiêu:</strong></p>
-            <ul>
-                <li>Các nhà sáng lập, quản lý doanh nghiệp nhỏ và vừa (SMEs), đội ngũ khởi nghiệp (startups) chưa có bộ phận pháp chế riêng.</li>
-                <li>Sinh viên, người lao động và người dân có nhu cầu tra cứu nhanh quy định pháp luật hoặc thủ tục hành chính trong cuộc sống hàng ngày.</li>
-            </ul>
-        </section>
-
-        <!-- MỤC 2: THÔNG ĐIỆP VÀ BỘ NHẬN DIỆN -->
-        <section id="nhan-dien">
-            <h2>2. Thông điệp và Bộ nhận diện</h2>
-            <p><strong>Thông điệp chính (Slogan):</strong> <em>"LegalAI — Hiểu Luật Dễ Dàng, Khởi Nghiệp Vững Vàng."</em></p>
-
-            <div class="img-container">
-                <h3>Banner & Ảnh chủ đề dự án</h3>
-                <img src="https://via.placeholder.com/800x400/1a365d/ffffff?text=LegalAI+-+Hero+Image" 
-                     alt="Banner chủ đề dự án LegalAI hiển thị giao diện tra cứu luật thông minh trên máy tính và điện thoại">
-                <br>
-                <span class="ai-badge">🤖 Hình ảnh được hỗ trợ tạo bởi Generative AI</span>
-            </div>
-
-            <div class="img-container">
-                <h3>Infographic Giới thiệu Tính năng</h3>
-                <img src="https://via.placeholder.com/600x800/2b6cb0/ffffff?text=LegalAI+-+Infographic" 
-                     alt="Infographic tóm tắt 3 bước sử dụng LegalAI: Hỏi câu hỏi, AI trích xuất luật, Nhận kết quả và liên kết đối chiếu">
-                <br>
-                <span class="ai-badge">🤖 Infographic thiết kế với sự hỗ trợ của công cụ AI</span>
-            </div>
-        </section>
-
-        <!-- MỤC 3: VIDEO MINH HỌA -->
-        <section id="video">
-            <h2>3. Video minh họa (60–90 giây)</h2>
-            <p>Video giới thiệu tổng quan về vấn đề pháp lý của startup và cách ứng dụng LegalAI để giải quyết trong 60 giây.</p>
-
-            <div class="video-container">
-                <!-- Thay mã Embed YouTube của nhóm bạn vào đây -->
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                        title="Video minh họa dự án LegalAI" 
-                        allowfullscreen></iframe>
-            </div>
-            
-            <p style="margin-top: 15px;">
-                <span class="ai-badge">🤖 Thông báo minh bạch: Video có sử dụng AI để hỗ trợ khởi tạo kịch bản, tạo giọng đọc thuyết minh tiếng Việt và phụ đề tự động.</span>
-            </p>
-        </section>
-
-        <!-- MỤC 4: THÔNG TIN NHÓM -->
-        <section id="thong-tin-nhom">
-            <h2>4. Thông tin nhóm</h2>
-            <p><strong>Giảng viên hướng dẫn:</strong> TS NGUYỄN QUỐC TRÌNH</p>
-            <p><strong>Dự án:</strong> LegalAI - Nhóm 9A</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>STT</th>
-                        <th>Họ và tên</th>
-                        <th>MSSV</th>
-                        <th>Phân công nhiệm vụ</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Nguyễn Thùy Ánh Dương</td>
-                        <td>2506AV0292</td>
-                        <td>Xây dựng mã nguồn Web, Quản lý GitHub Pages & Viết tài liệu Readme.md</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Đỗ Thị Phương Hoài</td>
-                        <td>2506AV0293</td>
-                        <td>Biên soạn nội dung Ý tưởng khởi nghiệp & Viết Prompt templates trong docs/</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Hồ Thị Hằng</td>
-                        <td>2506AV0257</td>
-                        <td>Thiết kế Bộ nhận diện (Poster/Infographic) & Dựng Video minh họa 60-90s</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Trần Trung Kiên</td>
-                        <td>2506AV0140</td>
-                        <td>Biên soạn nội dung Ý tưởng khởi nghiệp & Viết Prompt templates trong docs/</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Nguyễn Sỹ Khiêm</td>
-                        <td>2506AV0141</td>
-                        <td>Biên soạn nội dung Ý tưởng khởi nghiệp & Viết Prompt templates trong docs/</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Lê Minh An</td>
-                        <td>2506AV0131</td>
-                        <td>Biên soạn nội dung Ý tưởng khởi nghiệp & Viết Prompt templates trong docs/</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Nguyễn Huỳnh Thanh Hoàng</td>
-                        <td>2506AV0294</td>
-                        <td>Biên soạn nội dung Ý tưởng khởi nghiệp & Viết Prompt templates trong docs/</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Lưu Chấn Huy</td>
-                        <td>2506AV0295</td>
-                        <td>Biên soạn nội dung Ý tưởng khởi nghiệp & Viết Prompt templates trong docs/</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-    </div>
-
-    <footer>
-        <p>&copy; 2026 LegalAI - Đồ án Môn học AI và Ứng dụng. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+            <p><strong>Vấn đề thực tiễn:</strong> Hệ thống văn bản quy phạm pháp luật tại Việt Nam vô cùng đồ sộ, phức tạp và thường
