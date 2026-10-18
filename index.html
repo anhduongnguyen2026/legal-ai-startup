@@ -101,7 +101,11 @@
             margin-top: 15px;
         }
         table, th, td { border: 1px solid #cbd5e0; }
-        th, td { padding: 12px; text-align: left; }
+        th, td { padding: 12px; }
+        /* Căn giữa cho tiêu đề bảng và các cột STT, MSSV */
+        th, td:nth-child(1), td:nth-child(3) { text-align: center; }
+        /* Cột Họ và tên, Phân công nhiệm vụ căn trái cho dễ đọc */
+        td:nth-child(2), td:nth-child(4) { text-align: left; }
         th { background-color: #edf2f7; color: var(--primary-color); }
         footer {
             text-align: center;
@@ -184,8 +188,8 @@
         <!-- MỤC 4: THÔNG TIN NHÓM -->
         <section id="thong-tin-nhom">
             <h2>4. Thông tin nhóm</h2>
-            <p><strong>Giảng viên hướng dẫn:</strong> [TS NGUYỄN QUỐC TRÌNH]</p>
-            <p><strong>Dự án:</strong> LegalAI - Nhóm [NHÓM 9A]</p>
+            <p><strong>Giảng viên hướng dẫn:</strong> TS NGUYỄN QUỐC TRÌNH</p>
+            <p><strong>Dự án:</strong> LegalAI - Nhóm 9A</p>
 
             <table>
                 <thead>
@@ -216,31 +220,31 @@
                         <td>Thiết kế Bộ nhận diện (Poster/Infographic) & Dựng Video minh họa 60-90s</td>
                     </tr>
                     <tr>
-                        <td>2</td>
+                        <td>4</td>
                         <td>Trần Trung Kiên</td>
                         <td>2506AV0140</td>
                         <td>Biên soạn nội dung Ý tưởng khởi nghiệp & Viết Prompt templates trong docs/</td>
                     </tr>
                     <tr>
-                        <td>2</td>
+                        <td>5</td>
                         <td>Nguyễn Sỹ Khiêm</td>
                         <td>2506AV0141</td>
                         <td>Biên soạn nội dung Ý tưởng khởi nghiệp & Viết Prompt templates trong docs/</td>
                     </tr>
                     <tr>
-                        <td>2</td>
+                        <td>6</td>
                         <td>Lê Minh An</td>
                         <td>2506AV0131</td>
                         <td>Biên soạn nội dung Ý tưởng khởi nghiệp & Viết Prompt templates trong docs/</td>
                     </tr>
                     <tr>
-                        <td>2</td>
+                        <td>7</td>
                         <td>Nguyễn Huỳnh Thanh Hoàng</td>
                         <td>2506AV0294</td>
                         <td>Biên soạn nội dung Ý tưởng khởi nghiệp & Viết Prompt templates trong docs/</td>
                     </tr>
                     <tr>
-                        <td>2</td>
+                        <td>8</td>
                         <td>Lưu Chấn Huy</td>
                         <td>2506AV0295</td>
                         <td>Biên soạn nội dung Ý tưởng khởi nghiệp & Viết Prompt templates trong docs/</td>
